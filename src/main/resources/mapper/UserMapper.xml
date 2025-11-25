@@ -10,7 +10,7 @@
         FROM users
     </select>
 
-    <select id="findById" parameterType="int" resultType="pojo.User">
+    <select id="findUserById" parameterType="int" resultType="pojo.User">
         SELECT id, name, email, age
         FROM users
         WHERE id = #{id}
